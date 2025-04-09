@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /styles.css
+Allow: /images/
+Allow: /archives/
+
+# Sitemap location
+Sitemap: https://rememberevanjohnson.com/sitemap.xml 

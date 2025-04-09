@@ -37,7 +37,7 @@
     
     /* Common Values */
     --transition: all 0.3s ease;
-    --card-bg: rgba(253, 251, 243, 0.5);
+    --card-bg: rgba(245, 242, 230, 0.8);
 }
 
 /* Common Card Styles */
@@ -64,12 +64,34 @@
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
     transition: var(--transition);
+    padding: var(--spacing-lg);
 }
 
 .memory-entry:hover,
 .news-link:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-card-hover);
+}
+
+/* Memory Entry Specific Styles */
+.memory-entry {
+    background-color: var(--card-bg);
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid var(--color-border);
+}
+
+.memory-entry strong {
+    display: block;
+    color: var(--color-accent);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.memory-entry p {
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
 }
 
 /* Reset and Base Styles */
@@ -345,39 +367,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tab-content.active { display: block; }
-
-/* Memory Entries */
-.memory-entry {
-    background-color: rgba(253, 251, 243, 0.5);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-md);
-    margin-bottom: var(--spacing-lg);
-    border: none;
-    box-shadow: 0 2px 12px rgba(139, 101, 101, 0.05);
-    transition: var(--transition);
-}
-
-.memory-entry:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(139, 101, 101, 0.08);
-}
-
-.memory-entry strong {
-    display: block;
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
-    font-family: var(--font-primary);
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-.memory-entry p {
-    margin-bottom: var(--spacing-md);
-    font-family: var(--font-primary);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--color-text);
-}
 
 /* News Links */
 .news-links {
